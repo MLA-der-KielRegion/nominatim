@@ -5,12 +5,6 @@ Nominatim ist eine Open-Source-Geokodierungssoftware, die auf OpenStreetMap (OSM
 - Reverse-Geokodierung – Ermittlung einer Adresse oder eines Ortes aus Koordinaten.
 - Suche nach Orten – Finden von Städten, Straßen oder POIs (Points of Interest).
 
-### Einsatzmöglichkeiten
-
-- Eigener Geokodierungsdienst: Du kannst Nominatim auf einem eigenen Server betreiben, um unabhängig von externen APIs zu sein.
-- Kartenanwendungen: Nutzung für Standortbasierte Dienste (z. B. Anzeige von Haltestellen in deiner GTFS-API).
-- Routing- und Navigationssysteme: Integration in Karten oder Mobilitätsanwendungen.
-
 ### Einsatz im Projekt
 
 Beim MLA wird Nominatim dazu genutzt um Geokoordinaten mit Adressinformationen anzureichern. Das bedeutet, dass Sensoren, Messwerte oder Points of Interest (POIs), die nur als Breiten- und Längengrad vorliegen, durch eine Reverse-Geokodierung mit menschenlesbaren Adressen ergänzt werden.
@@ -19,7 +13,7 @@ Anwendungsfälle in MLA:
 - Verkehrssensoren: Ergänzen von Positionsdaten mit Straßen- oder Ortsnamen.
 - Umweltmesswerte: Verknüpfen von Luftqualitäts- oder Wetterdaten mit Stadtteilen oder Postleitzahlen.
 
-Das verbessert die Lesbarkeit und ermöglicht bessere Analysen, etwa zur Stadtplanung. Da Nominatim Open Source ist, kann es unabhängig von Drittanbietern betrieben und an spezifische Anforderungen angepasst werden.
+Das verbessert die Lesbarkeit und ermöglicht bessere Analysen, etwa zur Stadtplanung.
 
 
 
