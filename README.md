@@ -1,10 +1,10 @@
 # nominatim
  Open-source geocoding with OpenStreetMap data
 
-# Voraussetzungen
+## Voraussetzungen
 * Kubernetes 1.30+
 
-# TL;DR
+## TL;DR
 
 Die Variablen im Manifest müssen zuvor entsprechend der eigenen Umgebung angepasst werden.
 
@@ -29,5 +29,5 @@ Die Nachfolgenden Variablen werden im Manifest verwendet.
 https://wiki.openstreetmap.org/wiki/Nominatim
 https://download.geofabrik.de
 
-# License
+## License
 Copyright © 2024 ADDIX GmbH.
