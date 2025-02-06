@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ${CI_PROJECT_NAME}
+  labels:
+    app: ${CI_PROJECT_NAME}
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ${CI_PROJECT_NAME}
+  template:
+    metadata:
+      name: ${CI_PROJECT_NAME}
+      labels:
+        app: ${CI_PROJECT_NAME}
+    spec:
+      restartPolicy: Always
+      containers:
+      - image: mediagis/nominatim:4.5
+        name: ${CI_PROJECT_NAME}
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: PBF_URL
+          value: "${PBF_URL}"
+        - name: REPLICATION_URL
+          value: "${REPLICATION_URL}"
+        ports:
+        - containerPort: 8080
+          name: ${CI_PROJECT_NAME}
+        resources:
+          requests:
+            memory: "${MEM_REQUEST}"
+            cpu: "${CPU_REQUEST}"
+          limits:
+            memory: "${MEM_LIMIT}"
+            cpu: "${CPU_LIMIT}"
